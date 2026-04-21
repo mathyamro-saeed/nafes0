@@ -5,87 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اختبار نافس الوطني - الصف الثالث الابتدائي</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f7f6;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-        }
-        .exam-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #2c3e50;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-        }
-        .header h1 {
-            color: #2c3e50;
-            margin: 0 0 10px 0;
-            font-size: 24px;
-        }
-        .school-info {
-            font-size: 16px;
-            color: #7f8c8d;
-        }
-        .section-title {
-            background-color: #34495e;
-            color: white;
-            padding: 10px 15px;
-            margin: 30px 0 20px 0;
-            border-radius: 4px;
-            font-size: 18px;
-        }
-        .question-box {
-            background: #fafafa;
-            border-right: 5px solid #3498db;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-        }
-        .outcome-text {
-            display: block;
-            font-size: 13px;
-            color: #e67e22;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        .question-text {
-            font-size: 17px;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        .options-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        .option {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        .option:hover {
-            background: #3498db;
-            color: white;
-            border-color: #3498db;
-        }
-        @media print {
-            body { background: white; padding: 0; }
-            .exam-container { box-shadow: none; width: 100%; max-width: 100%; }
-            .option:hover { background: white; color: black; }
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; }
+        .exam-container { max-width: 950px; margin: 0 auto; background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .header { text-align: center; border-bottom: 3px solid #2c3e50; margin-bottom: 30px; padding-bottom: 20px; }
+        .header h1 { color: #2c3e50; margin: 0 0 10px 0; font-size: 24px; }
+        .school-info { font-size: 16px; color: #7f8c8d; }
+        .section-title { background-color: #34495e; color: white; padding: 10px 15px; margin: 30px 0 20px 0; border-radius: 4px; font-size: 18px; border-right: 8px solid #e67e22; }
+        .question-box { background: #fafafa; border-right: 5px solid #3498db; padding: 20px; margin-bottom: 20px; border-radius: 4px; page-break-inside: avoid; }
+        .outcome-text { display: block; font-size: 13px; color: #e67e22; margin-bottom: 8px; font-weight: bold; }
+        .question-text { font-size: 17px; font-weight: 600; margin-bottom: 15px; }
+        .options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+        .option { background: #fff; border: 1px solid #ddd; padding: 10px; border-radius: 4px; cursor: pointer; transition: 0.3s; text-align: center; }
+        .option:hover { background: #3498db; color: white; border-color: #3498db; }
+        .footer { text-align: center; color: #7f8c8d; margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; }
+        @media print { body { background: white; padding: 0; } .exam-container { box-shadow: none; width: 100%; max-width: 100%; } .option:hover { background: white; color: black; } }
     </style>
 </head>
 <body>
@@ -105,38 +38,371 @@
         <span class="outcome-text">ناتج التعلم: يحدد القيمة المنزلية لرقم في عدد ضمن أربع منازل.</span>
         <div class="question-text">س1: ما القيمة المنزلية للرقم (5) في العدد 2534؟</div>
         <div class="options-grid">
-            <div class="option">أ) 5</div>
-            <div class="option">ب) 50</div>
-            <div class="option">ج) 500</div>
-            <div class="option">د) 5000</div>
+            <div class="option">أ) 5</div><div class="option">ب) 50</div><div class="option">ج) 500</div><div class="option">د) 5000</div>
         </div>
     </div>
 
     <div class="question-box">
-        <span class="outcome-text">ناتج التعلم: يقرأ الأعداد ضمن أربع منازل ويكتبها بالصيغ المختلفة.</span>
+        <span class="outcome-text">ناتج التعلم: يقرأ الأعداد ضمن أربع منازل ويكتبها في الصور القياسية واللفظية والتحليلية.</span>
         <div class="question-text">س2: الصيغة القياسية للعدد "ثلاثة آلاف وخمس مئة وأربعة" هي:</div>
         <div class="options-grid">
-            <div class="option">أ) 3540</div>
-            <div class="option">ب) 3054</div>
-            <div class="option">ج) 3504</div>
-            <div class="option">د) 5340</div>
+            <div class="option">أ) 3540</div><div class="option">ب) 3054</div><div class="option">ج) 3504</div><div class="option">د) 5340</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يعد ضمن أربع منازل (تصاعدياً/تنازلياً/قفزياً) ويحدد الزوجي والفردي.</span>
+        <div class="question-text">س3: أي الأعداد التالية يكمل النمط القفزي: 2400، 2600، 2800، ... ؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 2900</div><div class="option">ب) 3000</div><div class="option">ج) 2850</div><div class="option">د) 3200</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقارن بين الأعداد ضمن أربع منازل ويرتبها.</span>
+        <div class="question-text">س4: الترتيب الصحيح للأعداد (1250، 1520، 1052) من الأصغر إلى الأكبر هو:</div>
+        <div class="options-grid">
+            <div class="option">أ) 1520، 1250، 1052</div><div class="option">ب) 1052، 1520، 1250</div><div class="option">ج) 1250، 1052، 1520</div><div class="option">د) 1052، 1250، 1520</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز الكسور كأجزاء من الكل أو مجموعة.</span>
+        <div class="question-text">س5: أكل محمد 3 قطع من فطيرة مقسمة إلى 8 قطع متساوية. ما الكسر الذي يمثل ما أكله؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 3/8</div><div class="option">ب) 5/8</div><div class="option">ج) 8/3</div><div class="option">د) 3/5</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقرأ الكسور ويكتبها.</span>
+        <div class="question-text">س6: كيف يكتب الكسر "خمسة أسباع"؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 7/5</div><div class="option">ب) 5/7</div><div class="option">ج) 1/7</div><div class="option">د) 5/5</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقارن بين الكسور ويرتبها.</span>
+        <div class="question-text">س7: أي الجمل التالية صحيحة؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 1/2 > 1/4</div><div class="option">ب) 1/4 > 1/2</div><div class="option">ج) 1/3 = 1/5</div><div class="option">د) 1/8 > 1/3</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز الكسور المكافئة ويوجدها.</span>
+        <div class="question-text">س8: ما الكسر المكافئ للكسر 1/2؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 1/3</div><div class="option">ب) 2/4</div><div class="option">ج) 2/3</div><div class="option">د) 3/5</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يجمع الأعداد ضمن ثلاث منازل ويطرحها.</span>
+        <div class="question-text">س9: ناتج عملية الجمع: 345 + 213 = ...</div>
+        <div class="options-grid">
+            <div class="option">أ) 558</div><div class="option">ب) 568</div><div class="option">ج) 557</div><div class="option">د) 658</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقدر نواتج الجمع والطرح.</span>
+        <div class="question-text">س10: تقدير ناتج 49 + 32 بالتقريب إلى أقرب عشرة هو:</div>
+        <div class="options-grid">
+            <div class="option">أ) 70</div><div class="option">ب) 80</div><div class="option">ج) 90</div><div class="option">د) 100</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يحل مسائل حياتية على الجمع والطرح.</span>
+        <div class="question-text">س11: مع أحمد 500 ريال، اشترى لعبة بمبلغ 200 ريال. كم ريالاً تبقى معه؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 200 ريال</div><div class="option">ب) 300 ريال</div><div class="option">ج) 700 ريال</div><div class="option">د) 500 ريال</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز عملية الضرب كجمع متكرر ويكوّن حقائقها.</span>
+        <div class="question-text">س12: الجملة التي تمثل الجمع المتكرر (4 + 4 + 4) هي:</div>
+        <div class="options-grid">
+            <div class="option">أ) 4 × 4</div><div class="option">ب) 3 × 4</div><div class="option">ج) 4 + 3</div><div class="option">د) 12 × 1</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز عملية القسمة كتوزيع بالتساوي ويكوّن حقائقها.</span>
+        <div class="question-text">س13: وزعت أم 12 قطعة حلوى بالتساوي على 3 أطفال. كم نصيب كل طفل؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 3 قطع</div><div class="option">ب) 4 قطع</div><div class="option">ج) 6 قطع</div><div class="option">د) 9 قطع</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يوجد نواتج الضرب والقسمة حتى 10×10.</span>
+        <div class="question-text">س14: ناتج 7 × 8 = ...</div>
+        <div class="options-grid">
+            <div class="option">أ) 54</div><div class="option">ب) 56</div><div class="option">ج) 48</div><div class="option">د) 64</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يحل مسائل حياتية على العمليات الأربع.</span>
+        <div class="question-text">س15: اشترى خالد 5 أقلام بسعر 4 ريالات للقلم الواحد. كم دفع للبائع؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 9 ريالات</div><div class="option">ب) 20 ريالاً</div><div class="option">ج) 1 ريال</div><div class="option">د) 25 ريالاً</div>
         </div>
     </div>
 
     <div class="section-title">المجال الثاني: الجبر والتحليل</div>
 
     <div class="question-box">
-        <span class="outcome-text">ناتج التعلم: يميز خاصية الإبدال في الجمع والضرب.</span>
-        <div class="question-text">س20: الجملة العددية التي تحقق خاصية الإبدال هي:</div>
+        <span class="outcome-text">ناتج التعلم: يصف أنماطاً غير عددية ويكملها.</span>
+        <div class="question-text">س16: ما الشكل التالي في النمط: (دائرة، مربع، دائرة، مربع، ...)؟</div>
         <div class="options-grid">
-            <div class="option">أ) 4 + 5 = 5 + 4</div>
-            <div class="option">ب) 4 + 5 = 9</div>
-            <div class="option">ج) 4 × 1 = 4</div>
-            <div class="option">د) (2+3)+1 = 2+(3+1)</div>
+            <div class="option">أ) مثلث</div><div class="option">ب) دائرة</div><div class="option">ج) مستطيل</div><div class="option">د) نجمة</div>
         </div>
     </div>
 
-    <p style="text-align: center; color: #7f8c8d; margin-top: 50px;">تم إعداد هذا الاختبار لغرض التدريب على نماذج نافس 2026</p>
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يصف أنماطاً عددية ويكملها.</span>
+        <div class="question-text">س17: ما العدد المفقود في النمط: 5، 10، 15، ...، 25؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 16</div><div class="option">ب) 20</div><div class="option">ج) 30</div><div class="option">د) 35</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يصف أنماطاً هندسية متنامية ويكملها.</span>
+        <div class="question-text">س18: إذا بدأنا بمثلث واحد، ثم أضفنا مثلثاً في كل مرة. كم عدد المثلثات في الشكل الرابع؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 3</div><div class="option">ب) 4</div><div class="option">ج) 5</div><div class="option">د) 6</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز خصائص الجمع/الطرح والضرب/القسمة مع الصفر والواحد.</span>
+        <div class="question-text">س19: أي العمليات التالية ناتجها يساوي صفر؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 5 + 0</div><div class="option">ب) 5 × 0</div><div class="option">ج) 5 × 1</div><div class="option">د) 5 - 0</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز خاصية الإبدال في الجمع والضرب.</span>
+        <div class="question-text">س20: الجملة العددية التي تحقق خاصية الإبدال هي:</div>
+        <div class="options-grid">
+            <div class="option">أ) 4 + 5 = 5 + 4</div><div class="option">ب) 4 + 5 = 9</div><div class="option">ج) 4 × 1 = 4</div><div class="option">د) (2+3)+1 = 2+(3+1)</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز خاصية التجميع في الجمع والضرب.</span>
+        <div class="question-text">س21: أوجد ناتج (2 × 3) × 2 باستخدام الخاصية التجميعية:</div>
+        <div class="options-grid">
+            <div class="option">أ) 6</div><div class="option">ب) 10</div><div class="option">ج) 12</div><div class="option">د) 8</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز خاصية توزيع الضرب على الجمع.</span>
+        <div class="question-text">س22: العبارة 3 × (4 + 2) تساوي:</div>
+        <div class="options-grid">
+            <div class="option">أ) (3×4) + 2</div><div class="option">ب) (3×4) + (3×2)</div><div class="option">ج) 3 + 4 + 2</div><div class="option">د) 12 + 2</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز العلاقة بين الجمع والطرح.</span>
+        <div class="question-text">س23: الحقيقة المرتبطة بالجملة 5 + 3 = 8 هي:</div>
+        <div class="options-grid">
+            <div class="option">أ) 8 × 1 = 8</div><div class="option">ب) 8 - 3 = 5</div><div class="option">ج) 3 + 5 = 8</div><div class="option">د) 5 - 3 = 2</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز العلاقة بين الضرب والجمع.</span>
+        <div class="question-text">س24: يمكن إيجاد ناتج 3 × 5 عن طريق الجمع كالتالي:</div>
+        <div class="options-grid">
+            <div class="option">أ) 3 + 5</div><div class="option">ب) 5 + 5 + 5</div><div class="option">ج) 3 + 3 + 3</div><div class="option">د) 5 × 5</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز العلاقة بين القسمة والطرح.</span>
+        <div class="question-text">س25: 12 ÷ 4 تعني طرح الرقم 4 من 12 بشكل متكرر:</div>
+        <div class="options-grid">
+            <div class="option">أ) مرة واحدة</div><div class="option">ب) مرتين</div><div class="option">ج) 3 مرات</div><div class="option">د) 4 مرات</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز العلاقة بين الضرب والقسمة.</span>
+        <div class="question-text">س26: الجملة المرتبطة بعملية القسمة 20 ÷ 5 = 4 هي:</div>
+        <div class="options-grid">
+            <div class="option">أ) 4 + 5 = 9</div><div class="option">ب) 5 × 4 = 20</div><div class="option">ج) 20 - 5 = 15</div><div class="option">د) 20 × 1 = 20</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يكتب جملاً عددية على العمليات الأربع ويحلها.</span>
+        <div class="question-text">س27: "عدد إذا أضفت إليه 5 أصبح الناتج 15". الجملة العددية هي:</div>
+        <div class="options-grid">
+            <div class="option">أ) س - 5 = 15</div><div class="option">ب) س + 5 = 15</div><div class="option">ج) 15 + 5 = س</div><div class="option">د) 5 × س = 15</div>
+        </div>
+    </div>
+
+    <div class="section-title">المجال الثالث: الهندسة والقياس</div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز الأشكال الثنائية الأبعاد ويصنفها.</span>
+        <div class="question-text">س28: الشكل الذي له 4 أضلاع متطابقة و4 زوايا قائمة هو:</div>
+        <div class="options-grid">
+            <div class="option">أ) المستطيل</div><div class="option">ب) المربع</div><div class="option">ج) المعين</div><div class="option">د) شبه المنحرف</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز التماثل ومحاوره في الأشكال.</span>
+        <div class="question-text">س29: كم عدد محاور التماثل للمستطيل؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 1</div><div class="option">ب) 2</div><div class="option">ج) 3</div><div class="option">د) 4</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز الأشكال ثلاثية الأبعاد وخصائصها.</span>
+        <div class="question-text">س30: المجسم الذي له 6 أوجه مربعة هو:</div>
+        <div class="options-grid">
+            <div class="option">أ) الأسطوانة</div><div class="option">ب) المكعب</div><div class="option">ج) الكرة</div><div class="option">د) المخروط</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز محيط المضلع ويقدره ويوجده.</span>
+        <div class="question-text">س31: مربع طول ضلعه 3 سم، ما محيطه؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 6 سم</div><div class="option">ب) 9 سم</div><div class="option">ج) 12 سم</div><div class="option">د) 15 سم</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز مساحة المضلع ويقدرها.</span>
+        <div class="question-text">س32: عدد الوحدات المربعة التي تغطي شكلاً يسمى:</div>
+        <div class="options-grid">
+            <div class="option">أ) المحيط</div><div class="option">ب) المساحة</div><div class="option">ج) الحجم</div><div class="option">د) الطول</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يوجد مساحة المربع والمستطيل (شبكة مربعات).</span>
+        <div class="question-text">س33: مستطيل طوله 4 وحدات وعرضه وحدتان. ما مساحته؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 6 وحدات مربعة</div><div class="option">ب) 8 وحدات مربعة</div><div class="option">ج) 12 وحدة مربعة</div><div class="option">د) 16 وحدة مربعة</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقدر الأطوال ويقيسها ويقارنها.</span>
+        <div class="question-text">س34: الوحدة الأنسب لقياس المسافة بين مدينتين هي:</div>
+        <div class="options-grid">
+            <div class="option">أ) المتر</div><div class="option">ب) السنتيمتر</div><div class="option">ج) الكيلومتر</div><div class="option">د) المليمتر</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقدر الكتل ويقيسها ويقارنها.</span>
+        <div class="question-text">س35: أي الأشياء التالية كتلته تقاس بالكيلوجرام؟</div>
+        <div class="options-grid">
+            <div class="option">أ) ريشة</div><div class="option">ب) قلم رصاص</div><div class="option">ج) كيس أرز كبير</div><div class="option">د) مشبك ورق</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقدر السعات ويقيسها ويقارنها.</span>
+        <div class="question-text">س36: سعة قارورة الماء الصغيرة تقاس بـ:</div>
+        <div class="options-grid">
+            <div class="option">أ) اللتر</div><div class="option">ب) الملتر</div><div class="option">ج) الكيلوجرام</div><div class="option">د) المتر</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يميز فئات النقود ويستخدمها في العد.</span>
+        <div class="question-text">س37: 3 ورقات من فئة 10 ريالات وورقة من فئة 5 ريالات تساوي:</div>
+        <div class="options-grid">
+            <div class="option">أ) 15 ريالاً</div><div class="option">ب) 30 ريالاً</div><div class="option">ج) 35 ريالاً</div><div class="option">د) 40 ريالاً</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يمثل المبالغ حتى 999 ريالاً بطرق متنوعة.</span>
+        <div class="question-text">س38: أي المجموعات التالية تمثل 100 ريال؟</div>
+        <div class="options-grid">
+            <div class="option">أ) ورقتان من فئة 50 ريالاً</div><div class="option">ب) 3 ورقات من فئة 10 ريالات</div><div class="option">ج) 5 ورقات من فئة 5 ريالات</div><div class="option">د) ورقة واحدة من فئة 50 ريالاً</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يحل مسائل مالية ضمن 999 ريالاً.</span>
+        <div class="question-text">س39: سعر القميص 50 ريالاً وسعر الحذاء 100 ريال. ما مجموع ما يدفعه المشتري؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 100 ريال</div><div class="option">ب) 120 ريالاً</div><div class="option">ج) 150 ريالاً</div><div class="option">د) 200 ريال</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يختار وحدات الزمن المناسبة لحدث.</span>
+        <div class="question-text">س40: الوحدة المناسبة لقياس زمن "رمشة العين" هي:</div>
+        <div class="options-grid">
+            <div class="option">أ) الساعة</div><div class="option">ب) الدقيقة</div><div class="option">ج) الثانية</div><div class="option">د) اليوم</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقرأ الوقت ويكتبه.</span>
+        <div class="question-text">س41: تشير الساعة إلى 3:30، كيف تقرأ؟</div>
+        <div class="options-grid">
+            <div class="option">أ) الثالثة تماماً</div><div class="option">ب) الثالثة والربع</div><div class="option">ج) الثالثة والنصف</div><div class="option">د) الرابعة والنصف</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يحل مسائل زمنية (الفترة بين حدثين).</span>
+        <div class="question-text">س42: بدأت المباراة الساعة 7:00 مساءً وانتهت الساعة 8:30 مساءً. كم استمرت المباراة؟</div>
+        <div class="options-grid">
+            <div class="option">أ) ساعة واحدة</div><div class="option">ب) ساعة ونصف</div><div class="option">ج) ساعتان</div><div class="option">د) 30 دقيقة</div>
+        </div>
+    </div>
+
+    <div class="section-title">المجال الرابع: الإحصاء والاحتمالات</div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يجمع بيانات وينظمها في جداول تكرارية.</span>
+        <div class="question-text">س43: الجدول الذي يستخدم الإشارات (||||) لعد البيانات يسمى:</div>
+        <div class="options-grid">
+            <div class="option">أ) جدول الضرب</div><div class="option">ب) الجدول التكراري</div><div class="option">ج) التمثيل بالأعمدة</div><div class="option">د) التمثيل بالصور</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يمثل البيانات بالأعمدة البيانية والرموز.</span>
+        <div class="question-text">س44: في التمثيل بالرموز، إذا كان الرمز (نجمة) يمثل طالبين. فكم طالباً تمثلهم 3 نجمات؟</div>
+        <div class="options-grid">
+            <div class="option">أ) 3</div><div class="option">ب) 5</div><div class="option">ج) 6</div><div class="option">د) 9</div>
+        </div>
+    </div>
+
+    <div class="question-box">
+        <span class="outcome-text">ناتج التعلم: يقرأ البيانات الممثلة ويفسرها.</span>
+        <div class="question-text">س45: إذا كان عمود "يوم الأحد" أطول من عمود "يوم الاثنين"، فهذا يعني أن:</div>
+        <div class="options-grid">
+            <div class="option">أ) قيمة الأحد أكبر</div><div class="option">ب) قيمة الاثنين أكبر</div><div class="option">ج) القيمتان متساويتان</div><div class="option">د) لا يمكن المقارنة</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        تم إعداد هذا الاختبار لغرض التدريب على نماذج نافس 2026 - مدرسة سعيد بن المسيب
+    </div>
 </div>
 
 </body>
