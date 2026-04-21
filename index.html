@@ -10,18 +10,19 @@
         .page { width: 210mm; min-height: 297mm; padding: 12mm; margin: 20px auto; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); box-sizing: border-box; page-break-after: always; position: relative; }
         .header { text-align: center; border-bottom: 2px solid #2c3e50; margin-bottom: 10px; padding-bottom: 5px; }
         .header h1 { font-size: 16pt; margin: 0; color: #2c3e50; }
-        .header p { font-size: 10pt; margin: 5px 0; color: #d35400; font-weight: bold; }
+        .header p { font-size: 11pt; margin: 5px 0; color: #d35400; font-weight: bold; }
         .question-box { border: 1px solid #eee; padding: 6px; margin-bottom: 6px; border-radius: 4px; background-color: #fdfdfd; }
         .q-text { font-size: 10.5pt; font-weight: 700; margin-bottom: 5px; display: block; }
         .options { display: flex; justify-content: space-between; gap: 5px; align-items: center; }
-        .option { flex: 1; border: 1px solid #ddd; padding: 4px; font-size: 9.5pt; text-align: center; background: #fff; border-radius: 3px; min-height: 40px; display: flex; align-items: center; justify-content: center; position: relative; }
+        .option { flex: 1; border: 1px solid #ddd; padding: 4px; font-size: 9.5pt; text-align: center; background: #fff; border-radius: 3px; min-height: 40px; display: flex; align-items: center; justify-content: center; }
         
-        /* ميزة التحويط البصري للإجابة الصحيحة */
+        /* تأثير التحويط للإجابة الصحيحة */
         .correct { 
             border: 3px solid #3498db !important; 
             background-color: #ebf5fb !important; 
             font-weight: bold;
-            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.4);
         }
 
         .fraction { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; font-weight: bold; line-height: 1.1; margin: 0 5px; }
@@ -36,7 +37,7 @@
 <div class="page">
     <div class="header">
         <h1>[ نموذج الإجابة ] - تدريبات نافس ٢٠٢٦</h1>
-        <p>مدرسة سعيد بن المسيب بأبها | مخصص للمصحح فقط</p>
+        <p>مدرسة سعيد بن المسيب بأبها | مخصص للمصحح | أ. عمرو العمري</p>
     </div>
     <div class="question-box"><span class="q-text">س١: ما القيمة المنزلية للرقم (٥) في العدد ٢٥٣٤؟</span><div class="options"><div class="option">أ) ٥</div><div class="option">ب) ٥٠</div><div class="option correct">ج) ٥٠٠</div><div class="option">د) ٥٠٠٠</div></div></div>
     <div class="question-box"><span class="q-text">س٢: الصيغة القياسية للعدد "ثلاثة آلاف وخمس مئة وأربعة":</span><div class="options"><div class="option">أ) ٣٥٤٠</div><div class="option">ب) ٣٠٥٤</div><div class="option correct">ج) ٣٥٠٤</div><div class="option">د) ٥٣٤٠</div></div></div>
@@ -48,6 +49,7 @@
     <div class="question-box"><span class="q-text">س٨: ما الكسر المكافئ للكسر <div class="fraction"><span class="top">١</span><span class="bottom">٢</span></div>؟</span><div class="options"><div class="option">أ) <div class="fraction"><span class="top">١</span><span class="bottom">٣</span></div></div><div class="option correct">ب) <div class="fraction"><span class="top">٢</span><span class="bottom">٤</span></div></div><div class="option">ج) <div class="fraction"><span class="top">٢</span><span class="bottom">٣</span></div></div><div class="option">د) <div class="fraction"><span class="top">٣</span><span class="bottom">٥</span></div></div></div></div>
     <div class="question-box"><span class="q-text">س٩: ناتج عملية الجمع: ٣٤٥ + ٢١٣ = ...</span><div class="options"><div class="option correct">أ) ٥٥٨</div><div class="option">ب) ٥٦٨</div><div class="option">ج) ٥٥٧</div><div class="option">د) ٦٥٨</div></div></div>
     <div class="question-box"><span class="q-text">س١٠: تقدير ناتج ٤٩ + ٣٢ لأقرب عشرة هو:</span><div class="options"><div class="option">أ) ٧٠</div><div class="option correct">ب) ٨٠</div><div class="option">ج) ٩٠</div><div class="option">د) ١٠٠</div></div></div>
+    <div class="footer">صفحة ١ من ٥</div>
 </div>
 
 <div class="page">
@@ -61,6 +63,7 @@
     <div class="question-box"><span class="q-text">س١٨: مثلث واحد، ثم أضفنا مثلثاً كل مرة. كم مثلثاً في الشكل الرابع؟</span><div class="options"><div class="option">أ) ٣</div><div class="option correct">ب) ٤</div><div class="option">ج) ٥</div><div class="option">د) ٦</div></div></div>
     <div class="question-box"><span class="q-text">س١٩: أي العمليات ناتجها يساوي صفر؟</span><div class="options"><div class="option">أ) ٥ + ٠</div><div class="option correct">ب) ٥ × ٠</div><div class="option">ج) ٥ × ١</div><div class="option">د) ٥ - ٠</div></div></div>
     <div class="question-box"><span class="q-text">س٢٠: أي جملة تحقق خاصية الإبدال؟</span><div class="options"><div class="option correct">أ) ٤+٥=٥+٤</div><div class="option">ب) ٤+٥=٩</div><div class="option">ج) ٤×١=٤</div><div class="option">د) (٢+٣)+١=٢+(٣+١)</div></div></div>
+    <div class="footer">صفحة ٢ من ٥</div>
 </div>
 
 <div class="page">
@@ -74,6 +77,7 @@
     <div class="question-box"><span class="q-text">س٢٨: شكل له ٤ أضلاع متطابقة و٤ زوايا قائمة:</span><div class="options"><div class="option">أ) مستطيل</div><div class="option correct">ب) مربع</div><div class="option">ج) معين</div><div class="option">د) منحرف</div></div></div>
     <div class="question-box"><span class="q-text">س٢٩: كم عدد محاور التماثل للمستطيل؟</span><div class="options"><div class="option">أ) ١</div><div class="option correct">ب) ٢</div><div class="option">ج) ٣</div><div class="option">د) ٤</div></div></div>
     <div class="question-box"><span class="q-text">س٣٠: مجسم له ٦ أوجه مربعة:</span><div class="options"><div class="option">أ) أسطوانة</div><div class="option correct">ب) مكعب</div><div class="option">ج) كرة</div><div class="option">د) مخروط</div></div></div>
+    <div class="footer">صفحة ٣ من ٥</div>
 </div>
 
 <div class="page">
@@ -87,6 +91,7 @@
     <div class="question-box"><span class="q-text">س٣٨: أي المجموعات تمثل ١٠٠ ريال؟</span><div class="options"><div class="option correct">أ) ورقتان ٥٠</div><div class="option">ب) ٣ ورقات ١٠</div><div class="option">ج) ٥ ورقات ٥</div><div class="option">د) ورقة ٥٠</div></div></div>
     <div class="question-box"><span class="q-text">س٣٩: سعر قميص ٥٠ وحذاء ١٠٠. المجموع؟</span><div class="options"><div class="option">أ) ١٠٠</div><div class="option">ب) ١٢٠</div><div class="option correct">ج) ١٥٠</div><div class="option">د) ٢٠٠</div></div></div>
     <div class="question-box"><span class="q-text">س٤٠: الوحدة المناسبة لقياس زمن "رمشة العين":</span><div class="options"><div class="option">أ) ساعة</div><div class="option">ب) دقيقة</div><div class="option correct">ج) ثانية</div><div class="option">د) يوم</div></div></div>
+    <div class="footer">صفحة ٤ من ٥</div>
 </div>
 
 <div class="page">
@@ -95,7 +100,8 @@
     <div class="question-box"><span class="q-text">س٤٣: جدول يستخدم الإشارات (||||) لعد البيانات:</span><div class="options"><div class="option">أ) ضرب</div><div class="option correct">ب) تكراري</div><div class="option">ج) أعمدة</div><div class="option">د) صور</div></div></div>
     <div class="question-box"><span class="q-text">س٤٤: نجمة تمثل طالبين. كم طالباً تمثلهم ٣ نجمات؟</span><div class="options"><div class="option">أ) ٣</div><div class="option">ب) ٥</div><div class="option correct">ج) ٦</div><div class="option">د) ٩</div></div></div>
     <div class="question-box"><span class="q-text">س٤٥: عمود الأحد أطول من الاثنين، يعني:</span><div class="options"><div class="option correct">أ) الأحد أكبر</div><div class="option">ب) الاثنين أكبر</div><div class="option">ج) متساويان</div><div class="option">د) لا يمكن</div></div></div>
-    <div class="footer" style="margin-top: 150px;">تمت مراجعة الإجابات بدقة - مدرسة سعيد بن المسيب</div>
+    <div class="footer" style="margin-top: 150px;">نهاية نموذج الإجابة - مدرسة سعيد بن المسيب</div>
+    <div class="footer">صفحة ٥ من ٥</div>
 </div>
 
 </body>
