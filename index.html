@@ -6,134 +6,80 @@
     <title>نموذج إجابة نافس ٢٠٢٦ - مدرسة سعيد بن المسيب</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
-        body { font-family: 'Vazirmatn', sans-serif; background-color: #f0f0f0; margin: 0; padding: 0; color: #333; }
-        .page { width: 210mm; min-height: 297mm; padding: 15mm; margin: 20px auto; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); box-sizing: border-box; page-break-after: always; }
-        .header { text-align: center; border-bottom: 2px solid #2c3e50; margin-bottom: 10px; padding-bottom: 10px; }
-        .header h1 { font-size: 16pt; margin: 0; color: #2c3e50; }
-        .header p { font-size: 10pt; margin: 5px 0; color: #666; }
-        .question-box { border: 1px solid #eee; padding: 8px; margin-bottom: 8px; border-radius: 4px; background-color: #fdfdfd; }
-        .outcome { font-size: 8pt; color: #d35400; font-weight: bold; display: block; margin-bottom: 4px; }
-        .q-text { font-size: 10.5pt; font-weight: 700; margin-bottom: 8px; display: block; }
-        .options { display: flex; justify-content: space-between; gap: 5px; align-items: center; }
-        .option { flex: 1; border: 1px solid #ddd; padding: 5px; font-size: 9.5pt; text-align: center; background: #fff; border-radius: 3px; min-height: 45px; display: flex; align-items: center; justify-content: center; }
-        
-        /* تنسيق الإجابة الصحيحة المحوطة */
-        .correct { 
-            border: 2px solid #27ae60 !important; 
-            background-color: #eafaf1 !important; 
-            font-weight: bold;
-            color: #27ae60;
-            border-radius: 10px; /* لشكل دائري قليلاً يحاكي التحويط */
-        }
-
-        .fraction { display: inline-flex; flex-direction: column; align-items: center; vertical-align: middle; font-weight: bold; line-height: 1.1; margin: 0 5px; }
-        .fraction .top { border-bottom: 1.5px solid #333; padding: 0 3px; }
-        .fraction .bottom { padding: 0 3px; }
-        .footer { text-align: center; font-size: 8pt; color: #aaa; margin-top: 10px; }
-        @media print { body { background: none; } .page { margin: 0; box-shadow: none; width: 100%; height: 100%; } .correct { border: 2px solid #000 !important; } }
+        body { font-family: 'Vazirmatn', sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; color: #333; }
+        .answer-container { max-width: 900px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; border-bottom: 3px solid #2c3e50; margin-bottom: 20px; padding-bottom: 10px; }
+        .header h1 { color: #2c3e50; font-size: 20pt; margin: 0; }
+        .grid-answers { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; margin-top: 20px; }
+        .answer-item { border: 1px solid #ddd; padding: 10px; border-radius: 5px; background: #fafafa; text-align: center; }
+        .q-num { font-weight: bold; color: #2c3e50; border-left: 3px solid #3498db; padding-left: 8px; margin-left: 5px; }
+        .correct { color: #27ae60; font-weight: bold; font-size: 1.2em; border: 2px solid #27ae60; border-radius: 50%; padding: 2px 8px; display: inline-block; margin-right: 5px; }
+        .footer { text-align: center; margin-top: 40px; font-size: 10pt; color: #7f8c8d; }
+        @media print { .answer-container { box-shadow: none; width: 100%; } }
     </style>
 </head>
 <body>
 
-<div class="page">
+<div class="answer-container">
     <div class="header">
-        <h1>نموذج إجابة اختبار "نافس" ٢٠٢٦ - الصف الثالث الابتدائي</h1>
-        <p>مدرسة سعيد بن المسيب بأبها | معلم المادة: أ. عمرو العمري | مدير المدرسة: عبدالرحمن النقاز</p>
+        <h1>نموذج الإجابة الصحيحة - اختبار نافس ٢٠٢٦</h1>
+        <p>مدرسة سعيد بن المسيب بأبها | معلم المادة: أ. عمرو العمري</p>
     </div>
-    <div class="question-box">
-        <span class="outcome">١. القيمة المنزلية ضمن أربع منازل.</span>
-        <span class="q-text">س١: ما القيمة المنزلية للرقم (٥) في العدد ٢٥٣٤؟</span>
-        <div class="options"><div class="option">أ) ٥</div><div class="option">ب) ٥٠</div><div class="option">ج) ٥٠٠</div><div class="option">د) ٥٠٠٠</div></div>
-        <script>document.querySelectorAll('.question-box')[0].querySelectorAll('.option')[2].classList.add('correct');</script>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٢. الصيغ المختلفة للعدد.</span>
-        <span class="q-text">س٢: الصيغة القياسية للعدد "ثلاثة آلاف وخمس مئة وأربعة" هي:</span>
-        <div class="options"><div class="option">أ) ٣٥٤٠</div><div class="option">ب) ٣٠٥٤</div><div class="option">ج) ٣٥٠٤</div><div class="option">د) ٥٣٤٠</div></div>
-        <script>document.querySelectorAll('.question-box')[1].querySelectorAll('.option')[2].classList.add('correct');</script>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٣. النمط القفزي.</span>
-        <span class="q-text">س٣: أي الأعداد التالية يكمل النمط القفزي: ٢٤٠٠، ٢٦٠٠، ٢٨٠٠، ... ؟</span>
-        <div class="options"><div class="option">أ) ٢٩٠٠</div><div class="option">ب) ٣٠٠٠</div><div class="option">ج) ٢٨٥٠</div><div class="option">د) ٣٢٠٠</div></div>
-        <script>document.querySelectorAll('.question-box')[2].querySelectorAll('.option')[1].classList.add('correct');</script>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٤. ترتيب الأعداد.</span>
-        <span class="q-text">س٤: الترتيب من الأصغر للأكبر للأعداد (١٢٥٠، ١٥٢٠، ١٠٥٢) هو:</span>
-        <div class="options"><div class="option">أ) ١٥٢٠، ١٢٥٠، ١٠٥٢</div><div class="option">ب) ١٠٥٢، ١٢٥٠، ١٥٢٠</div><div class="option">ج) ١٢٥٠، ١٠٥٢، ١٥٢٠</div><div class="option">د) ١٠٥٢، ١٥٢٠، ١٢٥٠</div></div>
-        <script>document.querySelectorAll('.question-box')[3].querySelectorAll('.option')[1].classList.add('correct');</script>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٥. تمثيل الكسور.</span>
-        <span class="q-text">س٥: أكل محمد ٣ قطع من فطيرة مقسمة إلى ٨ قطع. ما الكسر الذي يمثل ما أكله؟</span>
-        <div class="options">
-            <div class="option correct">أ) <div class="fraction"><span class="top">٣</span><span class="bottom">٨</span></div></div>
-            <div class="option">ب) <div class="fraction"><span class="top">٥</span><span class="bottom">٨</span></div></div>
-            <div class="option">ج) <div class="fraction"><span class="top">٨</span><span class="bottom">٣</span></div></div>
-            <div class="option">د) <div class="fraction"><span class="top">٣</span><span class="bottom">٥</span></div></div>
-        </div>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٦. كتابة الكسور.</span>
-        <span class="q-text">س٦: كيف يكتب الكسر "خمسة أسباع"؟</span>
-        <div class="options">
-            <div class="option">أ) <div class="fraction"><span class="top">٧</span><span class="bottom">٥</span></div></div>
-            <div class="option correct">ب) <div class="fraction"><span class="top">٥</span><span class="bottom">٧</span></div></div>
-            <div class="option">ج) <div class="fraction"><span class="top">١</span><span class="bottom">٧</span></div></div>
-            <div class="option">د) <div class="fraction"><span class="top">٥</span><span class="bottom">٥</span></div></div>
-        </div>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٧. مقارنة الكسور.</span>
-        <span class="q-text">س٧: أي الجمل التالية صحيحة؟</span>
-        <div class="options">
-            <div class="option correct">أ) <div class="fraction"><span class="top">١</span><span class="bottom">٢</span></div> > <div class="fraction"><span class="top">١</span><span class="bottom">٤</span></div></div>
-            <div class="option">ب) <div class="fraction"><span class="top">١</span><span class="bottom">٤</span></div> > <div class="fraction"><span class="top">١</span><span class="bottom">٢</span></div></div>
-            <div class="option">ج) <div class="fraction"><span class="top">١</span><span class="bottom">٣</span></div> = <div class="fraction"><span class="top">١</span><span class="bottom">٥</span></div></div>
-            <div class="option">د) <div class="fraction"><span class="top">١</span><span class="bottom">٨</span></div> > <div class="fraction"><span class="top">١</span><span class="bottom">٣</span></div></div>
-        </div>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٨. الكسور المكافئة.</span>
-        <span class="q-text">س٨: ما الكسر المكافئ للكسر <div class="fraction"><span class="top">١</span><span class="bottom">٢</span></div>؟</span>
-        <div class="options">
-            <div class="option">أ) <div class="fraction"><span class="top">١</span><span class="bottom">٣</span></div></div>
-            <div class="option correct">ب) <div class="fraction"><span class="top">٢</span><span class="bottom">٤</span></div></div>
-            <div class="option">ج) <div class="fraction"><span class="top">٢</span><span class="bottom">٣</span></div></div>
-            <div class="option">د) <div class="fraction"><span class="top">٣</span><span class="bottom">٥</span></div></div>
-        </div>
-    </div>
-    <div class="question-box">
-        <span class="outcome">٩. جمع الأعداد.</span>
-        <span class="q-text">س٩: ناتج عملية الجمع: ٣٤٥ + ٢١٣ = ...</span>
-        <div class="options"><div class="option correct">أ) ٥٥٨</div><div class="option">ب) ٥٦٨</div><div class="option">ج) ٥٥٧</div><div class="option">د) ٦٥٨</div></div>
-    </div>
-    <div class="question-box">
-        <span class="outcome">١٠. تقدير النواتج.</span>
-        <span class="q-text">س١٠: تقدير ناتج ٤٩ + ٣٢ بالتقريب لأقرب عشرة هو:</span>
-        <div class="options"><div class="option">أ) ٧٠</div><div class="option correct">ب) ٨٠</div><div class="option">ج) ٩٠</div><div class="option">د) ١٠٠</div></div>
-    </div>
-    <div class="footer">صفحة ١ من ٥</div>
-</div>
 
-<div class="page">
-    <div class="question-box">
-        <span class="outcome">١١. مسائل حياتية.</span>
-        <span class="q-text">س١١: مع أحمد ٥٠٠ ريال، اشترى لعبة بـ ٢٠٠ ريال. كم ريالاً تبقى معه؟</span>
-        <div class="options"><div class="option">أ) ٢٠٠</div><div class="option correct">ب) ٣٠٠</div><div class="option">ج) ٧٠٠</div><div class="option">د) ٥٠٠</div></div>
+    <div class="grid-answers">
+        <div class="answer-item"><span class="q-num">س١:</span> <span class="correct">ج</span> (٥٠٠)</div>
+        <div class="answer-item"><span class="q-num">س٢:</span> <span class="correct">ج</span> (٣٥٠٤)</div>
+        <div class="answer-item"><span class="q-num">س٣:</span> <span class="correct">ب</span> (٣٠٠٠)</div>
+        <div class="answer-item"><span class="q-num">س٤:</span> <span class="correct">ب</span> (١٠٥٢، ١٢٥٠، ١٥٢٠)</div>
+        <div class="answer-item"><span class="q-num">س٥:</span> <span class="correct">أ</span> (٣/٨)</div>
+        <div class="answer-item"><span class="q-num">س٦:</span> <span class="correct">ب</span> (٥/٧)</div>
+        <div class="answer-item"><span class="q-num">س٧:</span> <span class="correct">أ</span> (١/٢ > ١/٤)</div>
+        <div class="answer-item"><span class="q-num">س٨:</span> <span class="correct">ب</span> (٢/٤)</div>
+        <div class="answer-item"><span class="q-num">س٩:</span> <span class="correct">أ</span> (٥٥٨)</div>
+        <div class="answer-item"><span class="q-num">س١٠:</span> <span class="correct">ب</span> (٨٠)</div>
+        <div class="answer-item"><span class="q-num">س١١:</span> <span class="correct">ب</span> (٣٠٠ ريال)</div>
+        <div class="answer-item"><span class="q-num">س١٢:</span> <span class="correct">ب</span> (٣ × ٤)</div>
+        <div class="answer-item"><span class="q-num">س١٣:</span> <span class="correct">ب</span> (٤ قطع)</div>
+        <div class="answer-item"><span class="q-num">س١٤:</span> <span class="correct">ب</span> (٥٦)</div>
+        <div class="answer-item"><span class="q-num">س١٥:</span> <span class="correct">ب</span> (٢٠ ريالاً)</div>
+
+        <div class="answer-item"><span class="q-num">س١٦:</span> <span class="correct">ب</span> (دائرة)</div>
+        <div class="answer-item"><span class="q-num">س١٧:</span> <span class="correct">ب</span> (٢٠)</div>
+        <div class="answer-item"><span class="q-num">س١٨:</span> <span class="correct">ب</span> (٤)</div>
+        <div class="answer-item"><span class="q-num">س١٩:</span> <span class="correct">ب</span> (٥ × ٠)</div>
+        <div class="answer-item"><span class="q-num">س٢٠:</span> <span class="correct">أ</span> (٤+٥=٥+٤)</div>
+        <div class="answer-item"><span class="q-num">س٢١:</span> <span class="correct">ج</span> (١٢)</div>
+        <div class="answer-item"><span class="q-num">س٢٢:</span> <span class="correct">ب</span> (التوزيع)</div>
+        <div class="answer-item"><span class="q-num">س٢٣:</span> <span class="correct">ب</span> (٨-٣=٥)</div>
+        <div class="answer-item"><span class="q-num">س٢٤:</span> <span class="correct">ب</span> (٥+٥+٥)</div>
+        <div class="answer-item"><span class="q-num">س٢٥:</span> <span class="correct">ج</span> (٣ مرات)</div>
+        <div class="answer-item"><span class="q-num">س٢٦:</span> <span class="correct">ب</span> (٥×٤=٢٠)</div>
+        <div class="answer-item"><span class="q-num">س٢٧:</span> <span class="correct">ب</span> (س+٥=١٥)</div>
+
+        <div class="answer-item"><span class="q-num">س٢٨:</span> <span class="correct">ب</span> (المربع)</div>
+        <div class="answer-item"><span class="q-num">س٢٩:</span> <span class="correct">ب</span> (٢)</div>
+        <div class="answer-item"><span class="q-num">س٣٠:</span> <span class="correct">ب</span> (المكعب)</div>
+        <div class="answer-item"><span class="q-num">س٣١:</span> <span class="correct">ج</span> (١٢ سم)</div>
+        <div class="answer-item"><span class="q-num">س٣٢:</span> <span class="correct">ب</span> (المساحة)</div>
+        <div class="answer-item"><span class="q-num">س٣٣:</span> <span class="correct">ب</span> (٨ وحدات)</div>
+        <div class="answer-item"><span class="q-num">س٣٤:</span> <span class="correct">ج</span> (كيلومتر)</div>
+        <div class="answer-item"><span class="q-num">س٣٥:</span> <span class="correct">ج</span> (كيس أرز)</div>
+        <div class="answer-item"><span class="q-num">س٣٦:</span> <span class="correct">ب</span> (ملتر)</div>
+        <div class="answer-item"><span class="q-num">س٣٧:</span> <span class="correct">ج</span> (٣٥ ريالاً)</div>
+        <div class="answer-item"><span class="q-num">س٣٨:</span> <span class="correct">أ</span> (ورقتان ٥٠)</div>
+        <div class="answer-item"><span class="q-num">س٣٩:</span> <span class="correct">ج</span> (١٥٠ ريالاً)</div>
+        <div class="answer-item"><span class="q-num">س٤٠:</span> <span class="correct">ج</span> (الثانية)</div>
+        <div class="answer-item"><span class="q-num">س٤١:</span> <span class="correct">ج</span> (الثالثة والنصف)</div>
+        <div class="answer-item"><span class="q-num">س٤٢:</span> <span class="correct">ب</span> (ساعة ونصف)</div>
+
+        <div class="answer-item"><span class="q-num">س٤٣:</span> <span class="correct">ب</span> (التكراري)</div>
+        <div class="answer-item"><span class="q-num">س٤٤:</span> <span class="correct">ج</span> (٦ طلاب)</div>
+        <div class="answer-item"><span class="q-num">س٤٥:</span> <span class="correct">أ</span> (الأحد أكبر)</div>
     </div>
-    <div class="question-box">
-        <span class="outcome">١٤. نواتج الضرب.</span>
-        <span class="q-text">س١٤: ناتج ٧ × ٨ = ...</span>
-        <div class="options"><div class="option">أ) ٥٤</div><div class="option correct">ب) ٥٦</div><div class="option">ج) ٤٨</div><div class="option">د) ٦٤</div></div>
+
+    <div class="footer">
+        <p>تم إعداد نموذج الإجابة آلياً لدعم العملية التعليمية بمدرسة سعيد بن المسيب</p>
     </div>
-    <div class="question-box">
-        <span class="outcome">٢٠. خاصية الإبدال.</span>
-        <span class="q-text">س٢٠: الجملة التي تحقق خاصية الإبدال هي:</span>
-        <div class="options"><div class="option correct">أ) ٤+٥=٥+٤</div><div class="option">ب) ٤+٥=٩</div><div class="option">ج) ٤×١=٤</div><div class="option">د) غير ذلك</div></div>
-    </div>
-    <div class="footer">صفحة ٢ من ٥</div>
 </div>
 
 </body>
